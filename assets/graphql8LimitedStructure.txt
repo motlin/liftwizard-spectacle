@@ -1,0 +1,59 @@
+fragment blueprintFields on Blueprint {
+	key
+	version {
+		number
+		systemFrom
+		systemTo
+	}
+	systemFrom
+	systemTo
+	createdOn
+	lastUpdatedById
+	title
+	numberOfUpvotes
+	numberOfDownvotes
+	author {
+		userId
+		displayName
+		systemFrom
+		systemTo
+	}
+	imgurImage {
+		imgurId
+		imgurType
+		deleteHash
+		height
+		width
+		systemFrom
+		systemTo
+	}
+	tags {
+		systemFrom
+		systemTo
+		tag {
+			category
+			name
+			ordinal
+		}
+	}
+}
+
+{
+	toLowerCase: blueprintByFinder(
+		operation: {
+			author: { displayName: { toLowerCase: { startsWith: "factorio" } } }
+		}
+	) {
+		...blueprintFields
+	}
+
+	substring: blueprintByFinder(
+		operation: {
+			author: {
+				displayName: { substring: { eq: "factorio" }, start: 2, end: 10 }
+			}
+		}
+	) {
+		...blueprintFields
+	}
+}

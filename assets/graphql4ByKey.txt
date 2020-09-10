@@ -1,0 +1,39 @@
+{
+	blueprint(key: "-KnQ865j-qQ21WoUPbd3") {
+		key
+		version {
+			number
+			systemFrom
+			systemTo
+		}
+		systemFrom
+		systemTo
+		createdOn
+		lastUpdatedById
+		title
+		numberOfUpvotes
+		numberOfDownvotes
+		author {
+			userId
+			displayName
+			systemFrom
+			systemTo
+		}
+		imgurImage {
+			imgurId
+			imgurType
+			deleteHash
+			height
+			width
+			systemFrom
+			systemTo
+		}
+		tags {
+			tag {
+				category
+				name
+				ordinal
+			}
+		}
+	}
+}

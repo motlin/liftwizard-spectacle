@@ -1,0 +1,90 @@
+{
+	"data": {
+		"blueprint": {
+			"key"              : "-KnQ865j-qQ21WoUPbd3",
+			"version"          : {
+				"number"    : 46,
+				"systemFrom": "2020-08-04T04:20:24Z",
+				"systemTo"  : null
+			},
+			"systemFrom"       : "2020-08-04T04:20:24Z",
+			"systemTo"         : null,
+			"createdOn"        : "2017-06-24T21:26:57.846Z",
+			"lastUpdatedById"  : "1ksiCkccOgNMkhCcBEbfwU8lvP12",
+			"title"            : "Tileable Science Production 0.17-0.18 - Early to Mid Game",
+			"numberOfUpvotes"  : 1936,
+			"numberOfDownvotes": 0,
+			"author"           : {
+				"userId"     : "1ksiCkccOgNMkhCcBEbfwU8lvP12",
+				"displayName": "Christoffer Ramqvist",
+				"systemFrom" : "2017-09-07T04:20:15Z",
+				"systemTo"   : null
+			},
+			"imgurImage"       : {
+				"imgurId"   : "ta1WUcf",
+				"imgurType" : "image/jpeg",
+				"deleteHash": "0GQwZzRYzsS1DUn",
+				"height"    : 2861,
+				"width"     : 1554,
+				"systemFrom": "2020-01-11T04:20:28Z",
+				"systemTo"  : null
+			},
+			"tags"             : [
+				{
+					"systemFrom": "2017-06-25T04:20:11Z",
+					"systemTo"  : null,
+					"tag"       : {
+						"category": "general",
+						"name"    : "early game",
+						"ordinal" : 9
+					}
+				},
+				{
+					"systemFrom": "2017-07-20T04:20:10Z",
+					"systemTo"  : null,
+					"tag"       : {
+						"category": "general",
+						"name"    : "mid game",
+						"ordinal" : 10
+					}
+				},
+				{
+					"systemFrom": "2017-06-25T04:20:11Z",
+					"systemTo"  : null,
+					"tag"       : {
+						"category": "general",
+						"name"    : "tileable",
+						"ordinal" : 13
+					}
+				},
+				{
+					"systemFrom": "2017-06-25T04:20:11Z",
+					"systemTo"  : null,
+					"tag"       : {
+						"category": "mods",
+						"name"    : "vanilla",
+						"ordinal" : 29
+					}
+				},
+				{
+					"systemFrom": "2017-06-25T04:20:11Z",
+					"systemTo"  : null,
+					"tag"       : {
+						"category": "production",
+						"name"    : "science",
+						"ordinal" : 49
+					}
+				},
+				{
+					"systemFrom": "2019-10-02T08:25:22Z",
+					"systemTo"  : null,
+					"tag"       : {
+						"category": "version",
+						"name"    : "0,17",
+						"ordinal" : 78
+					}
+				}
+			]
+		}
+	}
+}

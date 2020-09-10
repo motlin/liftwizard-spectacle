@@ -1,0 +1,45 @@
+fragment blueprintFields on Blueprint {
+	key
+	version {
+		number
+		systemFrom
+		systemTo
+	}
+	systemFrom
+	systemTo
+	createdOn
+	lastUpdatedById
+	title
+	numberOfUpvotes
+	numberOfDownvotes
+	author {
+		userId
+		displayName
+		systemFrom
+		systemTo
+	}
+	imgurImage {
+		imgurId
+		imgurType
+		deleteHash
+		height
+		width
+		systemFrom
+		systemTo
+	}
+	tags {
+		systemFrom
+		systemTo
+		tag {
+			category
+			name
+			ordinal
+		}
+	}
+}
+
+{
+	blueprint(key: "-KnQ865j-qQ21WoUPbd3") {
+		...blueprintFields
+	}
+}

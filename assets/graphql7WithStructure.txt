@@ -1,0 +1,82 @@
+fragment blueprintFields on Blueprint {
+	key
+	version {
+		number
+		systemFrom
+		systemTo
+	}
+	systemFrom
+	systemTo
+	createdOn
+	lastUpdatedById
+	title
+	numberOfUpvotes
+	numberOfDownvotes
+	author {
+		userId
+		displayName
+		systemFrom
+		systemTo
+	}
+	imgurImage {
+		imgurId
+		imgurType
+		deleteHash
+		height
+		width
+		systemFrom
+		systemTo
+	}
+	tags {
+		systemFrom
+		systemTo
+		tag {
+			category
+			name
+			ordinal
+		}
+	}
+}
+
+{
+	v46: blueprintByFinder(operation: { key: { eq: "-KnQ865j-qQ21WoUPbd3" } }) {
+		...blueprintFields
+	}
+
+	v45: blueprintByFinder(
+		operation: {
+			key: { eq: "-KnQ865j-qQ21WoUPbd3" }
+			system: { eq: "2020-08-04T00:00:00Z" }
+		}
+	) {
+		...blueprintFields
+	}
+
+	v44: blueprintByFinder(
+		operation: {
+			key: { eq: "-KnQ865j-qQ21WoUPbd3" }
+			version: { number: { eq: 44 } }
+			system: { equalsEdgePoint: {} }
+		}
+	) {
+		...blueprintFields
+	}
+
+	v46String: blueprintByOperation(
+		operation: "this.key == \"-KnQ865j-qQ21WoUPbd3\""
+	) {
+		...blueprintFields
+	}
+
+	v45String: blueprintByOperation(
+		operation: "this.key == \"-KnQ865j-qQ21WoUPbd3\" && this.system == \"2020-08-04T00:00:00Z\""
+	) {
+		...blueprintFields
+	}
+
+	v44String: blueprintByOperation(
+		operation: "this.key == \"-KnQ865j-qQ21WoUPbd3\" && this.version.number == 44 && this.system equalsEdgePoint"
+	) {
+		...blueprintFields
+	}
+}

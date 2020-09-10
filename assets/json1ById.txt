@@ -1,0 +1,68 @@
+{
+	"key"                : "-KnQ865j-qQ21WoUPbd3",
+	"version"            : {
+		"number": 46
+	},
+	"systemFrom"         : "2020-08-04T04:20:24Z",
+	"systemTo"           : null,
+	"createdOn"          : "2017-06-24T21:26:57.846Z",
+	"lastUpdatedById"    : "1ksiCkccOgNMkhCcBEbfwU8lvP12",
+	"title"              : "Tileable Science Production 0.17-0.18 - Early to Mid Game",
+	"numberOfUpvotes"    : 1936,
+	"numberOfDownvotes"  : 0,
+	"author"             : {
+		"userId"     : "1ksiCkccOgNMkhCcBEbfwU8lvP12",
+		"displayName": "Christoffer Ramqvist"
+	},
+	"imgurImage"         : {
+		"imgurId"   : "ta1WUcf",
+		"imgurType" : "image/jpeg",
+		"deleteHash": "0GQwZzRYzsS1DUn",
+		"height"    : 2861,
+		"width"     : 1554
+	},
+	"tags"               : [
+		{
+			"tag": {
+				"category": "general",
+				"name"    : "early game"
+			}
+		},
+		{
+			"tag": {
+				"category": "general",
+				"name"    : "mid game"
+			}
+		},
+		{
+			"tag": {
+				"category": "general",
+				"name"    : "tileable"
+			}
+		},
+		{
+			"tag": {
+				"category": "mods",
+				"name"    : "vanilla"
+			}
+		},
+		{
+			"tag": {
+				"category": "production",
+				"name"    : "science"
+			}
+		},
+		{
+			"tag": {
+				"category": "version",
+				"name"    : "0,17"
+			}
+		}
+	],
+	"disqusComments"     : [],
+	"comments"           : [],
+	"descriptionMarkdown": "These science blueprints are pretty compact...",
+	"blueprintString"    : {
+		"blueprintString": "0eNrNfV2PG8mR7V8R9GQD4jgjv3PeFvde=="
+	}
+}
