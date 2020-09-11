@@ -1,0 +1,39 @@
+name: Deploy Spectacle build to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+      - refs/tags/*
+    tags:
+      - refs/tags/*
+  release:
+    types: [created, published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # (true OR recursive)
+          submodules: true
+          # Fetch all history
+          fetch-depth: 0
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # cname: example.com
+          force_orphan: true
+          commit_message: "[skip ci] deploy to gh-pages"
