@@ -21,9 +21,9 @@ WHERE
   AND BLUEPRINT.system_to = '9999-12-01 23:59:00.000';
 ```
 
-| key                  | title        | description | imgur_image_id | system_from         | system_to           |
-| -------------------- | ------------ | ----------- | -------------- | ------------------- | ------------------- |
-| -KnQ865j-qQ21WoUPbd3 | Tileable ... | compact ... | ta1WUcf        | 2020-08-04 04:20:24 | 9999-12-01 23:59:00 |
+| key                  | title        | imgur_id | system_from         | system_to           |
+| -------------------- | ------------ | -------- | ------------------- | ------------------- |
+| -KnQ865j-qQ21WoUPbd3 | Tileable ... | ta1WUcf  | 2020-08-04 04:20:24 | 9999-12-01 23:59:00 |
 ---
 
 # BlueprintTag asOf infinity
@@ -93,9 +93,9 @@ WHERE
   AND BLUEPRINT.system_to > '2020-01-11 00:00:00.000';
 ```
 
-| key                  | title        | description | imgur_image_id | system_from         | system_to           |
-| -------------------- | ------------ | ----------- | -------------- | ------------------- | ------------------- |
-| -KnQ865j-qQ21WoUPbd3 | Tileable ... | compact ... | 1GpbUKi        | 2020-01-10 04:26:22 | 2020-01-11 04:20:28 |
+| key                  | title        | imgur_id | system_from         | system_to           |
+| -------------------- | ------------ | -------- | ------------------- | ------------------- |
+| -KnQ865j-qQ21WoUPbd3 | Tileable ... | 1GpbUKi  | 2020-01-10 04:26:22 | 2020-01-11 04:20:28 |
 ---
 
 # BlueprintVersion asOf {date}
