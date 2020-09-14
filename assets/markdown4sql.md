@@ -21,9 +21,9 @@ WHERE
   AND BLUEPRINT.system_to = '9999-12-01 23:59:00.000';
 ```
 
-| key                  | title                                                     | description_markdown                              | imgur_image_id | created_by_id                | created_on              | last_updated_by_id           | system_from         | system_to           |
-| -------------------- | --------------------------------------------------------- | ------------------------------------------------- | -------------- | ---------------------------- | ----------------------- | ---------------------------- | ------------------- | ------------------- |
-| -KnQ865j-qQ21WoUPbd3 | Tileable Science Production 0.17-0.18 - Early to Mid Game | These science blueprints are pretty compact <...> | ta1WUcf        | 1ksiCkccOgNMkhCcBEbfwU8lvP12 | 2017-06-24 21:26:57.846 | 1ksiCkccOgNMkhCcBEbfwU8lvP12 | 2020-08-04 04:20:24 | 9999-12-01 23:59:00 |
+| key                  | title        | description | imgur_image_id | system_from         | system_to           |
+| -------------------- | ------------ | ----------- | -------------- | ------------------- | ------------------- |
+| -KnQ865j-qQ21WoUPbd3 | Tileable ... | compact ... | ta1WUcf        | 2020-08-04 04:20:24 | 9999-12-01 23:59:00 |
 ---
 
 # BlueprintTag asOf infinity
@@ -93,9 +93,9 @@ WHERE
   AND BLUEPRINT.system_to > '2020-01-11 00:00:00.000';
 ```
 
-| key                  | title                                                | description_markdown                              | imgur_image_id | created_by_id                | created_on              | last_updated_by_id           | system_from         | system_to           |
-| -------------------- | ---------------------------------------------------- | ------------------------------------------------- | -------------- | ---------------------------- | ----------------------- | ---------------------------- | ------------------- | ------------------- |
-| -KnQ865j-qQ21WoUPbd3 | Tileable Science Production 0.17 - Early to Mid Game | These science blueprints are pretty compact <...> | 1GpbUKi        | 1ksiCkccOgNMkhCcBEbfwU8lvP12 | 2017-06-24 21:26:57.846 | 1ksiCkccOgNMkhCcBEbfwU8lvP12 | 2020-01-10 04:26:22 | 2020-01-11 04:20:28 |
+| key                  | title        | description | imgur_image_id | system_from         | system_to           |
+| -------------------- | ------------ | ----------- | -------------- | ------------------- | ------------------- |
+| -KnQ865j-qQ21WoUPbd3 | Tileable ... | compact ... | 1GpbUKi        | 2020-01-10 04:26:22 | 2020-01-11 04:20:28 |
 ---
 
 # BlueprintVersion asOf {date}
@@ -111,6 +111,6 @@ WHERE
   AND BLUEPRINT_VERSION.system_to > '2020-01-11 00:00:00.000';
 ```
 
-| key                  | number | created_by_id                | created_on              | last_updated_by_id           | system_from         | system_to           |
-| -------------------- | ------ | ---------------------------- | ----------------------- | ---------------------------- | ------------------- | ------------------- |
-| -KnQ865j-qQ21WoUPbd3 | 44     | 1ksiCkccOgNMkhCcBEbfwU8lvP12 | 2017-06-24 21:26:57.846 | 1ksiCkccOgNMkhCcBEbfwU8lvP12 | 2020-01-10 04:26:22 | 2020-01-11 04:20:28 |
+| key                  | number | system_from         | system_to           |
+| -------------------- | ------ | ------------------- | ------------------- |
+| -KnQ865j-qQ21WoUPbd3 | 44     | 2020-01-10 04:26:22 | 2020-01-11 04:20:28 |
