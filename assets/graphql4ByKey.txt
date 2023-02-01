@@ -1,39 +1,54 @@
-{
-	blueprint(key: "-KnQ865j-qQ21WoUPbd3") {
-		key
-		version {
-			number
-			systemFrom
-			systemTo
-		}
-		systemFrom
-		systemTo
-		createdOn
-		lastUpdatedById
-		title
-		numberOfUpvotes
-		numberOfDownvotes
-		author {
-			userId
-			displayName
-			systemFrom
-			systemTo
-		}
-		imgurImage {
-			imgurId
-			imgurType
-			deleteHash
-			height
-			width
-			systemFrom
-			systemTo
-		}
-		tags {
-			tag {
-				category
-				name
-				ordinal
-			}
-		}
-	}
+query {
+  blueprint(key: "-KnQ865j-qQ21WoUPbd3") {
+    key
+    systemFrom
+    systemTo
+    version {
+      number
+      systemFrom
+      systemTo
+      createdOn
+      createdBy {
+        userId
+      }
+      lastUpdatedBy {
+        userId
+      }
+    }
+    title
+    voteSummary {
+      numberOfUpvotes
+      systemFrom
+      systemTo
+    }
+    blueprintString {
+      sha
+      createdOn
+      createdBy {
+        userId
+      }
+    }
+    imgurImage {
+      imgurId
+      imgurType
+      # not in json
+      deleteHash
+      height
+      width
+      systemFrom
+      systemTo
+    }
+    tags {
+      systemFrom
+      systemTo
+      tag {
+        category
+        name
+        # not in json
+        ordinal
+        systemFrom
+        system
+      }
+    }
+  }
 }

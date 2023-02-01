@@ -8,4 +8,7 @@ Do these queries all return the same data?
 
 ## GraphQL
 
-[GraphQL Playground](https://www.factorio.school/graphql-playground/)
+* Site supports GraphQL in addition to REST
+* UI only ever uses REST
+
+https://www.factorio.school/graphql-playground/

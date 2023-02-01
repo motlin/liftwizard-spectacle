@@ -235,6 +235,7 @@ const deck = <Deck theme={theme} transitionEffect="fade">
         <Stepper
             defaultValue={[]}
             values={[
+                [1, 1, <Markdown>{"GraphQL queries are surrounded with `query {...}` or just `{...}`"}</Markdown>],
                 [1, 40, <Markdown>{"Similar query to `GET blueprint/{key}`"}</Markdown>],
                 [4, 8, <Markdown>{"except we're also including `systemFrom` and `systemTo` here"}</Markdown>],
                 [16, 21, <Markdown>{"and here, etc."}</Markdown>],
@@ -248,7 +249,7 @@ const deck = <Deck theme={theme} transitionEffect="fade">
                         language="graphql"
                         highlightStart={value[0]}
                         highlightEnd={value[1]}
-                        indentSize={4}
+                        indentSize={1}
                     >
                         {graphql4ByKey}
                     </CodePane>
