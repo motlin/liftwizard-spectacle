@@ -40,13 +40,28 @@ import markdown4sql from '../assets/markdown4sql.md';
 
 // SPECTACLE_CLI_THEME_START
 const theme = {
-    fonts: {
-        header: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
-        text: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
+    // fonts: {
+    //     header: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    //     text: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    //     monospace: '"Menlo", "Consolas", monospace'
+    // },
+    // size: {
+    //     maxCodePaneHeight: 360
+    // }
+    colors: {
+        // body text
+        primary: '#ebe5da',
+
+        // title text
+        secondary: '#fc6986',
+
+        // background
+        tertiary: '#1e2852',
+
+        quaternary: '#ffc951',
+
+        quinary: '#8bddfd'
     },
-    size: {
-        maxCodePaneHeight: 300
-    }
 };
 // SPECTACLE_CLI_THEME_END
 

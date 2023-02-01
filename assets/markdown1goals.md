@@ -1,8 +1,30 @@
+## Agenda
+* Demo of temporal services
+* Focus on what, more than why or how
+* Except for this intro: brief discuss of goals
+---
+
+## Define temporal
+* Edits are non-destructive
+* All previous versions of the data are saved and accessible
+* Technically: unitemporal
+* Out of scope: bitemporal
+---
+
 ## Goals
-* Add features to PRS and CR
+* Add temporal features to our real services (already started)
 * Build interest in unitemporal services in data
-* Show one way how
-* Discuss implementation tradeoffs
+* Start thinking about the future of framework support
+---
+
+## My Timeline
+* 2009 - 2015: Worked temporal applications, then temporal frameworks
+* 2016: UI lead quit, needed to learn react, built factorio-blueprints site
+* 2017: Website becomes popular
+* Also 2017: Joined TS in Data Engineering, working on a bitemporal data platform. Exposure to MSSQL temporal features.
+* 2018: Joined SLIC as the tech lead
+* 2020: Rewrote factorio-blueprints with a temporal relational schema
+* Also 2020: Merge wrote code review microservices using postgres temporal extensions
 ---
 
 ## Demo
