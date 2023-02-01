@@ -137,18 +137,22 @@ const deck = <Deck theme={theme} transitionEffect="fade">
                 [7, 8, <Markdown>`systemTo: null` means the current data</Markdown>],
                 [7, 8, <Markdown>`9999-12-01`, `null`, `infinity` all mean the same thing</Markdown>],
                 [1, 69, <Markdown>{"* `GET blueprint/{key}` is the same as:\n* `GET blueprint/{key}?asOf=9999-12-01T00:00:00Z`"}</Markdown>],
-                [5, 16, <Markdown>`version` is dedicated to temporal metadata</Markdown>],
-                [6, 6, <Markdown>`version.number` increments with changes to the composite</Markdown>],
-                [9, 9, <Markdown>`version.createdOn` matches version 1's `systemFrom` and never changes</Markdown>],
-                [5, 16, <Markdown>`version` comes from `BlueprintVersion` temporal table and has its own `systemFrom` and `systemTo`. Do you know why?</Markdown>],
-                [18, 19, <Markdown>`voteSummary.numberOfUpvotes` is derived from `count()`</Markdown>],
-                [10, 15, <Markdown>`userId` is foreign key to user table</Markdown>],
-                [10, 15, <Markdown>User data is queried separately, not embedded</Markdown>],
-                [10, 15, <Markdown>User data is **not** part of the composite</Markdown>],
+                [5, 16, <Markdown>`version` contains temporal metadata about the composite</Markdown>],
                 [30, 37, <Markdown>Imgur image data **is** part of the composite</Markdown>],
                 [38, 111, <Markdown>{"`Blueprint <--> Tag` is many-to-many"}</Markdown>],
                 [38, 111, <Markdown>`BlueprintTag` mapping table is also part of the Blueprint composite</Markdown>],
-                [7, 8, <Markdown>this: `2020-12-15T04:18:34Z` next: `2020-12-15T00:00:00Z`</Markdown>],
+                [6, 6, <Markdown>`version.number` increments **once** on changes to anything in the composite</Markdown>],
+                [7, 7, <Markdown>We can infer what was edited recently by finding the matching `systemFrom` times</Markdown>],
+                [3, 3, <Markdown>The top level `systemFrom` matches, so something on the Blueprint changed. Maybe title or descriptionMarkdown.</Markdown>],
+                [35, 35, <Markdown>`ImgurImage.systemFrom` matches, so the image was replaced in the same edit.</Markdown>],
+                [42, 42, <Markdown>None of the `BlueprintTag.systemFrom` times match, so no tags were added in this edit.</Markdown>],
+                [9, 9, <Markdown>`version.createdOn` matches version 1's `systemFrom` and never changes</Markdown>],
+                [5, 16, <Markdown>`version` comes from `BlueprintVersion` temporal table and has its own `systemFrom` and `systemTo`. Do you know why?</Markdown>],
+                [10, 15, <Markdown>`userId` is a foreign key to user table</Markdown>],
+                [10, 15, <Markdown>User data is queried separately, not embedded</Markdown>],
+                [10, 15, <Markdown>User data is **not** part of the composite</Markdown>],
+                [1, 69, <Markdown>{"Done with: `2020-12-15T04:18:34Z`\nNext: `2020-12-15T00:00:00Z`"}</Markdown>],
+
             ]}
         >
             {(value, step) => (
@@ -236,7 +240,10 @@ const deck = <Deck theme={theme} transitionEffect="fade">
             defaultValue={[]}
             values={[
                 [1, 1, <Markdown>{"GraphQL queries are surrounded with `query {...}` or just `{...}`"}</Markdown>],
-                [1, 40, <Markdown>{"Similar query to `GET blueprint/{key}`"}</Markdown>],
+                [2, 2, <Markdown>{"GraphQL queries have a **criteria** portion."}</Markdown>],
+                [3, 52, <Markdown>{"GraphQL queries have a **projection** portion."}</Markdown>],
+                [2, 2, <Markdown>{"GraphQL queries have a **criteria** portion."}</Markdown>],
+                [2, 2, <Markdown>{"Similar query to `GET blueprint/{key}`"}</Markdown>],
                 [4, 8, <Markdown>{"except we're also including `systemFrom` and `systemTo` here"}</Markdown>],
                 [16, 21, <Markdown>{"and here, etc."}</Markdown>],
                 [2, 2, <Markdown>{"GraphQL has no notion of criteria. Exact equality for `key` is implied."}</Markdown>],
