@@ -146,8 +146,8 @@ const deck = <Deck theme={theme} transitionEffect="fade">
                 [10, 15, <Markdown>User data is queried separately, not embedded</Markdown>],
                 [10, 15, <Markdown>User data is **not** part of the composite</Markdown>],
                 [30, 37, <Markdown>Imgur image data **is** part of the composite</Markdown>],
-                [40, 112, <Markdown>{"`Blueprint <--> Tag` is many-to-many"}</Markdown>],
-                [40, 112, <Markdown>`BlueprintTag` mapping table is also part of the Blueprint composite</Markdown>],
+                [38, 111, <Markdown>{"`Blueprint <--> Tag` is many-to-many"}</Markdown>],
+                [38, 111, <Markdown>`BlueprintTag` mapping table is also part of the Blueprint composite</Markdown>],
                 [7, 8, <Markdown>this: `2020-12-15T04:18:34Z` next: `2020-12-15T00:00:00Z`</Markdown>],
             ]}
         >
@@ -168,13 +168,18 @@ const deck = <Deck theme={theme} transitionEffect="fade">
         </Stepper>
     </Slide>
     <Slide>
-        <Heading>{"{key}?asOf=2020-08-04T00:00:00Z"}</Heading>
+        <Heading>{"{key}?asOf=2020-12-15T00:00:00Z"}</Heading>
         <Stepper
             defaultValue={[]}
             values={[
-                [7, 8, <Markdown>{"`systemFrom <= 2020-08-04 < systemTo`"}</Markdown>],
-                [3, 5, <Markdown>`version.number == 45`</Markdown>],
-                [10, 10, <Markdown>Old title here - new one said `0.17-0.18`</Markdown>],
+                [3, 4, <Markdown>{"`systemFrom <= 2020-12-15 < systemTo`"}</Markdown>],
+                [7, 8, <Markdown>{"`systemFrom <= 2020-12-15 < systemTo`"}</Markdown>],
+                [20, 21, <Markdown>{"`systemFrom <= 2020-12-15 < systemTo`"}</Markdown>],
+                [35, 36, <Markdown>{"`systemFrom <= 2020-12-15 < systemTo`"}</Markdown>],
+                [5, 6, <Markdown>`version.number == 47`</Markdown>],
+                [17, 17, <Markdown>Old title here - new one said `0.17-1.0`</Markdown>],
+                [30, 37, <Markdown>New `imgurImage` as well</Markdown>],
+                [5, 16, <Markdown>Single version number bump, with multiple edits</Markdown>],
             ]}
         >
             {(value, step) => (
@@ -195,13 +200,14 @@ const deck = <Deck theme={theme} transitionEffect="fade">
         </Stepper>
     </Slide>
     <Slide>
-        <Heading>{"{key}?version=44"}</Heading>
+        <Heading>{"{key}?version=46"}</Heading>
         <Stepper
             defaultValue={[]}
             values={[
-                [3, 5, <Markdown>`version.number == 44`</Markdown>],
-                [7, 8, <Markdown>{"`systemFrom == 2020-01-10T04:26:22Z`"}</Markdown>],
-                [17, 23, <Markdown>{"Old imgur image here - new one is `ta1WUcf`"}</Markdown>],
+                [5, 6, <Markdown>`version.number == 46`</Markdown>],
+                [7, 8, <Markdown>{"`systemFrom == 2020-01-11T04:20:28Z`"}</Markdown>],
+                [7, 8, <Markdown>{"The rest identical to `systemFrom <= 2020-01-11 < systemTo`"}</Markdown>],
+                [17, 17, <Markdown>{"Old title here - new one says `0.17-0.18`"}</Markdown>],
             ]}
         >
             {(value, step) => (
