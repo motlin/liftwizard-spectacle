@@ -72,8 +72,11 @@ https://wiki.factorio.com/Blueprint
 ## First look at services
 
 * Most-favorited blueprint as our example.
-* We'll change our focus from the UI 
-* `./view/-KnQ865j-qQ21WoUPbd3`
+* We'll change our focus from the UI
+
+`.../view/-KnQ865j-qQ21WoUPbd3`
+
 * to the REST api
-* `./api/blueprint/-KnQ865j-qQ21WoUPbd3`
+
+`.../api/blueprint/-KnQ865j-qQ21WoUPbd3`
 

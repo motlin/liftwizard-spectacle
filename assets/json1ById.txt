@@ -1,68 +1,113 @@
 {
-	"key"                : "-KnQ865j-qQ21WoUPbd3",
-	"version"            : {
-		"number": 46
-	},
-	"systemFrom"         : "2020-08-04T04:20:24Z",
-	"systemTo"           : null,
-	"createdOn"          : "2017-06-24T21:26:57.846Z",
-	"lastUpdatedById"    : "1ksiCkccOgNMkhCcBEbfwU8lvP12",
-	"title"              : "Tileable Science Production 0.17-0.18 - Early to Mid Game",
-	"numberOfUpvotes"    : 1936,
-	"numberOfDownvotes"  : 0,
-	"author"             : {
-		"userId"     : "1ksiCkccOgNMkhCcBEbfwU8lvP12",
-		"displayName": "Christoffer Ramqvist"
-	},
-	"imgurImage"         : {
-		"imgurId"   : "ta1WUcf",
-		"imgurType" : "image/jpeg",
-		"deleteHash": "0GQwZzRYzsS1DUn",
-		"height"    : 2861,
-		"width"     : 1554
-	},
-	"tags"               : [
-		{
-			"tag": {
-				"category": "general",
-				"name"    : "early game"
-			}
-		},
-		{
-			"tag": {
-				"category": "general",
-				"name"    : "mid game"
-			}
-		},
-		{
-			"tag": {
-				"category": "general",
-				"name"    : "tileable"
-			}
-		},
-		{
-			"tag": {
-				"category": "mods",
-				"name"    : "vanilla"
-			}
-		},
-		{
-			"tag": {
-				"category": "production",
-				"name"    : "science"
-			}
-		},
-		{
-			"tag": {
-				"category": "version",
-				"name"    : "0,17"
-			}
-		}
-	],
-	"disqusComments"     : [],
-	"comments"           : [],
-	"descriptionMarkdown": "These science blueprints are pretty compact...",
-	"blueprintString"    : {
-		"blueprintString": "0eNrNfV2PG8mR7V8R9GQD4jgjv3PeFvde=="
-	}
+  "key": "-KnQ865j-qQ21WoUPbd3",
+  "systemFrom": "2020-12-15T04:18:34Z",
+  "systemTo": null,
+  "version": {
+    "number": 48,
+    "systemFrom": "2020-12-15T04:18:34Z",
+    "systemTo": null,
+    "createdOn": "2017-06-24T21:26:57.846Z",
+    "createdBy": {
+      "userId": "1ksiCkccOgNMkhCcBEbfwU8lvP12"
+    },
+    "lastUpdatedBy": {
+      "userId": "1ksiCkccOgNMkhCcBEbfwU8lvP12"
+    }
+  },
+  "title": "Tileable Science Production 0.17-1.0 - Early to Mid Game",
+  "voteSummary": {
+    "numberOfUpvotes": 2683,
+    "systemFrom": "2023-01-24T04:18:27Z",
+    "systemTo": null
+  },
+  "blueprintString": {
+    "sha": "fb7b59ab6efb271f4345315b537104b428b54857",
+    "createdOn": "2017-06-24T21:26:57.846Z",
+    "createdBy": {
+      "userId": "1ksiCkccOgNMkhCcBEbfwU8lvP12"
+    }
+  },
+  "imgurImage": {
+    "imgurId": "42RoMSi",
+    "imgurType": "image/jpeg",
+    "height": 2536,
+    "width": 1391,
+    "systemFrom": "2020-12-15T04:18:34Z",
+    "systemTo": null
+  },
+  "descriptionMarkdown": "These science blueprints are pretty compact, easy to build and have a good ratio. Feel free to comment if you have any suggestions of improvements! They have been designed with expandability in mind, so that you can start up small and add more tiles later if faster research is needed. The description say its good for Early to Mid game, but you can easily continue using the designs in the late/end game if you just upgrade to assembler 3, blue belts, stack inserters and put in a bunch of modules. In the end-game, a beaconed approach with modules will save more space/resources, but that would require a full redesign.\n\nThe input/output belts are denoted using constant combinators just for information, these (including the underground belts) can be removed if you'd like once the relevant resource have been pulled from the bus (if you would like to skip adding the underground belts/constant combinators for 2'nd tile, use Shift+Click to overlap them with the previous tile, then they will not be added). If the overlay on the constant combinator is not showing, go into Settings/Interface/Show Combinator settings in \"Alt-mode\").\n\nSince each type of tile produces a different amount of science pack, make sure to build tiles in this ratio to balance the production of science to multiples of 1.5/s: Red: 1 tile, Green: 1 tile, Blue: 2 tiles, Grey: 2 tiles, Purple: 2 tiles, Yellow: 2 tiles.\n\n* **Red (Automation) science** 1.5/s - Inputs: Copper 1.5/s, Iron 3/s\n* **Red (Automation) science** 1.5/s (Gear-input) - Inputs: Copper 1.5/s, Gears 1.5/s.\n* **Green (Logistic) science** 1.5/s - Inputs: Iron 6.75/s, Green circuits 1.5/s.\n* **Green (Logistic) science** 1.5/s (Gear-input) - Inputs: Iron 2.25/s, Gears 2.25/s, Green circuits 1.5/s.\n* **Blue (Chemical) science** 0.75/s - Inputs: Iron 3/s, Steel 0.75/s, Red circuits 1.125/s / Sulfur 0.375/s.\n* **Grey (Military) science** 0.75/s - Inputs: Coal 3.75/s, Iron 3.375/s, Bricks 3.75/s, Steel 0.375/s, Copper 1.875/s.\n* **Purple (Production) science** 0.75/s - Inputs: Steel 6.25/s, Iron 1.875/s, Stone 3.75/s, Bricks 2.5/s, Red circuits 2.5/s, Green circuits 1.25/s.\n* **Yellow (Utility) science** 0.75/s - Inputs: Iron 1/s, Batteries 0.5/s, Lubricant 3.75/s, Green circuits 1.25/s, Steel 2/s, Processing units 0.5/s, Copper 15/s, Plastic 3.75/s.\n* **Yellow (Utility) science** 0.75/s (Low density structure-input) - Inputs: Iron 1/s, Batteries 0.5/s, Lubricant 3.75/s, Green circuits 1.25/s, Steel 0.5/s, Processing units 0.5/s, Low density structure 0.75/s.\n\n<details><summary><b>CLICK HERE FOR THE CHANGELOG WITH BLUEPRINTS OF PREVIOUS VERSIONS</b></summary>\n2017-07-08: Made a few adjustments on green science to improve iron throughput.<br/>\n2017-07-10: Redesigned grey (military) science due to bad iron throughput. Moved the iron belts to the side, so it is easier to add extra iron belts (which is probably needed if you build more than a couple of tiles.<br/>\n2017-07-16: Minor fixes on blue science. Redesigned purple (production) science, putting iron on the side and not using split belts to increase throughput.<br/>\n2017-07-20: Made purple science more compact and using less belts, put green/red circuits on same belt since it is used the least.<br/>\n2017-07-21: Improved purple science further, significantly fewer belts and more compact.<br/>\n2017-09-13: Added filter inserters to denote inputs/outputs, which should be removed once inputs have been pulled in from the bus. https://imgur.com/LnSE2Mo https://pastebin.com/vYAgMF6k<br/>\n2017-09-18: Replaced filter inserters with constant combinators for denoting inputs/outputs. Use underground belts as input/output to make spacing the tiles easier. Redesigned red & yellow science, greatly reducing size & number of belts. https://imgur.com/Z67qZSd https://pastebin.com/7xWwj3Aa<br/>\n2017-09-24: But both overground/underground belt designs in the blueprint book, for people to use whatever they prefer. https://imgur.com/sA78MAd https://pastebin.com/P58AXD6Z<br/>\n2017-10-02: Added an experimental Blue Science Tile with 0.75/s production speed, to balance with the other tiles https://pastebin.com/GGK6tVSb<br/>\n2018-01-07: Purple science updated for v0.16. Balancer on Military science. Merged output belts and split red science/steel belt into two on Blue science. Constant combinators on all overground tiles for denoting input/output belts. Minor optimization on purple science. Thx Casper42 for the feedback! https://pastebin.com/Db8PJrJx<br/>\n2018-02-08: Removed unnecessary balancer on military science https://imgur.com/ReFEpSE https://pastebin.com/K0GWaY4M<br/>\n2018-02-16: Added alternate tiles with gear-inputs, removed experimental 0.75/s Blue Science, it was ugly https://pastebin.com/rCTRmzsR<br/>\n2018-02-19: Shrinked the purple science tile, creds to SoggsTheMage for the improvements. https://imgur.com/pTUCojI https://pastebin.com/c2Beazup<br/>\n2018-03-30: Removed 0.15 blueprints, since 0.16 has gone stable. Reduced belts on purple science. Set output priority on splitters. https://imgur.com/dHzKT5d https://pastebin.com/bej1xK6x<br/>\n2018-04-01: Rearranged Military science tile, reducing width by 1 and adding extra iron belt. https://imgur.com/ezGHeZa https://pastebin.com/UQR6KNDa<br/>\n2018-04-02: Fixed purple science with gear-input, using both lanes of gears. Removed duplicate purple science blueprint. Fixed red science with gear-input, wrong type of inserter. Fixed blue science with gear-input, it will still work when upgraded to blue belts. https://pastebin.com/cfzRYbj6<br/>\n2018-04-03: Redesigned green science, less wide design with fewer parts, also works better with upgraded belts/assemblers. Rearranged belts on grey/military science with gear-input, also to work better when upgraded. https://imgur.com/P6qPcgp https://pastebin.com/JaKGbsrR<br/>\n2018-04-07: Optimized green science, shrinked width by 1. https://imgur.com/maf7F6F https://pastebin.com/p5Tv7XKS<br/>\n2018-06-16: Minor optimization of green science https://imgur.com/3EFKwlz https://pastebin.com/wrECuSKv<br/>\n2019-02-28: Upgraded to v0.17 blueprint format. First experimental version of Production Science. Kept old recipies for archival purpose. https://pastebin.com/vdj2S3jT<br/>\n2019-03-02: Included yellow science. Removed old 0.16 recipies. https://imgur.com/r7prm9y https://pastebin.com/Bhq7ZSAE<br/>\n2019-03-06: Included blue science. Optimizations https://imgur.com/979q5Ww https://pastebin.com/MBdL3zn4<br/>\n2019-03-08: Renamed all science packs according to 0.17. Military science included. Yellow science version with on-site \"Low density structure\"-production. https://imgur.com/HixahIZ https://pastebin.com/5e8tRcE3<br/>\n2019-10-06: Updated Chemical Science with sulfur. https://pastebin.com/48hN349M<br/>\n2020-01-09: Shrinked purple science, and other cleanups. Added underground belts before all inputs with constant combinator, more noob friendly. https://imgur.com/Kt0Qb1V https://pastebin.com/MiR0sHT7<br/>\n2020-01-10: Reworked purple science, shrinking even further. Some rework of Military science, cleaning it up and reducing number of power poles. https://imgur.com/1GpbUKi https://pastebin.com/MR5AXmbP<br/>\n2020-01-11: Optimizations on purple science, using less materials and simplifying belt layout. https://imgur.com/ta1WUcf https://pastebin.com/AETysa1a<br/>\n</details>",
+  "tags": [
+    {
+      "tagCategory": "general",
+      "tagName": "early game",
+      "systemFrom": "2017-06-25T04:20:11Z",
+      "systemTo": null,
+      "tag": {
+        "category": "general",
+        "name": "early game",
+        "systemFrom": "1999-12-31T19:00:00Z",
+        "systemTo": null
+      }
+    },
+    {
+      "tagCategory": "general",
+      "tagName": "mid game",
+      "systemFrom": "2017-07-20T04:20:10Z",
+      "systemTo": null,
+      "tag": {
+        "category": "general",
+        "name": "mid game",
+        "systemFrom": "1999-12-31T19:00:00Z",
+        "systemTo": null
+      }
+    },
+    {
+      "tagCategory": "general",
+      "tagName": "tileable",
+      "systemFrom": "2017-06-25T04:20:11Z",
+      "systemTo": null,
+      "tag": {
+        "category": "general",
+        "name": "tileable",
+        "systemFrom": "1999-12-31T19:00:00Z",
+        "systemTo": null
+      }
+    },
+    {
+      "tagCategory": "mods",
+      "tagName": "vanilla",
+      "systemFrom": "2017-06-25T04:20:11Z",
+      "systemTo": null,
+      "tag": {
+        "category": "mods",
+        "name": "vanilla",
+        "systemFrom": "1999-12-31T19:00:00Z",
+        "systemTo": null
+      }
+    },
+    {
+      "tagCategory": "production",
+      "tagName": "science",
+      "systemFrom": "2017-06-25T04:20:11Z",
+      "systemTo": null,
+      "tag": {
+        "category": "production",
+        "name": "science",
+        "systemFrom": "1999-12-31T19:00:00Z",
+        "systemTo": null
+      }
+    },
+    {
+      "tagCategory": "version",
+      "tagName": "0,17",
+      "systemFrom": "2019-10-02T08:25:22Z",
+      "systemTo": null,
+      "tag": {
+        "category": "version",
+        "name": "0,17",
+        "systemFrom": "1999-12-31T19:00:00Z",
+        "systemTo": null
+      }
+    }
+  ]
 }

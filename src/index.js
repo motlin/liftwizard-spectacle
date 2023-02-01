@@ -45,9 +45,9 @@ const theme = {
     //     text: '"Helvetica Neue", Helvetica, Arial, sans-serif',
     //     monospace: '"Menlo", "Consolas", monospace'
     // },
-    // size: {
-    //     maxCodePaneHeight: 360
-    // }
+    size: {
+        maxCodePaneHeight: 400
+    },
     colors: {
         // body text
         primary: '#ebe5da',
@@ -132,20 +132,23 @@ const deck = <Deck theme={theme} transitionEffect="fade">
         <Stepper
             defaultValue={[]}
             values={[
+                [1, 69, <Markdown>Here's the data!</Markdown>],
+                [7, 8, <Markdown>`systemFrom` is the last updated date</Markdown>],
+                [7, 8, <Markdown>`systemTo: null` means the current data</Markdown>],
+                [7, 8, <Markdown>`9999-12-01`, `null`, `infinity` all mean the same thing</Markdown>],
                 [1, 69, <Markdown>{"* `GET blueprint/{key}` is the same as:\n* `GET blueprint/{key}?asOf=9999-12-01T00:00:00Z`"}</Markdown>],
-                [6, 7, <Markdown>`systemFrom` is the last updated date</Markdown>],
-                [6, 7, <Markdown>`systemTo: null` means the current data</Markdown>],
-                [6, 7, <Markdown>`9999-12-01`, `null`, `infinity` all mean the same thing</Markdown>],
-                [8, 8, <Markdown>`createdOn` matches version 1's `systemFrom` and never changes</Markdown>],
-                [11, 11, <Markdown>`numberOfUpvotes` is derived from `count()`</Markdown>],
-                [13, 16, <Markdown>`author` comes from `Person` table</Markdown>],
-                [13, 16, <Markdown>`author` json omits `systemFrom` and `systemTo`</Markdown>],
-                [13, 16, <Markdown>`author` is **not** part of the composite</Markdown>],
-                [24, 61, <Markdown>{"`Blueprint <--> Tag` is many-to-many"}</Markdown>],
-                [24, 61, <Markdown>`BlueprintTag` mapping table is part of the Blueprint composite</Markdown>],
-                [3, 5, <Markdown>`version.number` increments with changes to the composite</Markdown>],
-                [3, 5, <Markdown>`version` comes from `BlueprintVersion` temporal table and has its own `systemFrom` and `systemTo`. Do you know why?</Markdown>],
-                [6, 6, <Markdown>this: `2020-08-04T04:20:24Z` next: `2020-08-04T00:00:00Z`</Markdown>],
+                [5, 16, <Markdown>`version` is dedicated to temporal metadata</Markdown>],
+                [6, 6, <Markdown>`version.number` increments with changes to the composite</Markdown>],
+                [9, 9, <Markdown>`version.createdOn` matches version 1's `systemFrom` and never changes</Markdown>],
+                [5, 16, <Markdown>`version` comes from `BlueprintVersion` temporal table and has its own `systemFrom` and `systemTo`. Do you know why?</Markdown>],
+                [18, 19, <Markdown>`voteSummary.numberOfUpvotes` is derived from `count()`</Markdown>],
+                [10, 15, <Markdown>`userId` is foreign key to user table</Markdown>],
+                [10, 15, <Markdown>User data is queried separately, not embedded</Markdown>],
+                [10, 15, <Markdown>User data is **not** part of the composite</Markdown>],
+                [30, 37, <Markdown>Imgur image data **is** part of the composite</Markdown>],
+                [40, 112, <Markdown>{"`Blueprint <--> Tag` is many-to-many"}</Markdown>],
+                [40, 112, <Markdown>`BlueprintTag` mapping table is also part of the Blueprint composite</Markdown>],
+                [7, 8, <Markdown>this: `2020-12-15T04:18:34Z` next: `2020-12-15T00:00:00Z`</Markdown>],
             ]}
         >
             {(value, step) => (
@@ -155,7 +158,7 @@ const deck = <Deck theme={theme} transitionEffect="fade">
                         language="json"
                         highlightStart={value[0]}
                         highlightEnd={value[1]}
-                        indentSize={4}
+                        indentSize={1}
                     >
                         {json1ById}
                     </CodePane>
@@ -169,7 +172,7 @@ const deck = <Deck theme={theme} transitionEffect="fade">
         <Stepper
             defaultValue={[]}
             values={[
-                [6, 7, <Markdown>{"`systemFrom <= 2020-08-04 < systemTo`"}</Markdown>],
+                [7, 8, <Markdown>{"`systemFrom <= 2020-08-04 < systemTo`"}</Markdown>],
                 [3, 5, <Markdown>`version.number == 45`</Markdown>],
                 [10, 10, <Markdown>Old title here - new one said `0.17-0.18`</Markdown>],
             ]}
@@ -197,7 +200,7 @@ const deck = <Deck theme={theme} transitionEffect="fade">
             defaultValue={[]}
             values={[
                 [3, 5, <Markdown>`version.number == 44`</Markdown>],
-                [6, 7, <Markdown>{"`systemFrom == 2020-01-10T04:26:22Z`"}</Markdown>],
+                [7, 8, <Markdown>{"`systemFrom == 2020-01-10T04:26:22Z`"}</Markdown>],
                 [17, 23, <Markdown>{"Old imgur image here - new one is `ta1WUcf`"}</Markdown>],
             ]}
         >
