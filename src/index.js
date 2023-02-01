@@ -112,15 +112,15 @@ const deck = <Deck theme={theme} transitionEffect="fade">
                 <Appear elementNum={1}>
                     <Text>
                         <Link
-                            href="https://www.factorio.school/api/blueprint/-KnQ865j-qQ21WoUPbd3?asOf=2020-08-04T00:00:00Z">
-                            <CodeSpan>{"/.../{key}?asOf=2020-08-04T00:00:00Z"}</CodeSpan>
+                            href="https://www.factorio.school/api/blueprint/-KnQ865j-qQ21WoUPbd3?asOf=2020-12-15T00:00:00Z">
+                            <CodeSpan>{"/.../{key}?asOf=2020-12-15T00:00:00Z"}</CodeSpan>
                         </Link>
                     </Text>
                 </Appear>
                 <Appear elementNum={2}>
                     <Text>
-                        <Link href="https://www.factorio.school/api/blueprint/-KnQ865j-qQ21WoUPbd3?version=44">
-                            <CodeSpan>{"/.../{key}?version=44"}</CodeSpan>
+                        <Link href="https://www.factorio.school/api/blueprint/-KnQ865j-qQ21WoUPbd3?version=46">
+                            <CodeSpan>{"/.../{key}?version=46"}</CodeSpan>
                         </Link>
                     </Text>
                 </Appear>
