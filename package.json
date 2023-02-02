@@ -20,7 +20,7 @@
     "babel-loader": "^8.3.0",
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.1",
-    "raw-loader": "^4.0.0",
+    "raw-loader": "^4.0.2",
     "rimraf": "^4.1.2",
     "spectacle-mdx-loader": "^0.1.1",
     "webpack": "^4.41.4",
