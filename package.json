@@ -14,7 +14,7 @@
     "spectacle": "^6.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
+    "@babel/core": "^7.20.12",
     "@babel/preset-react": "^7.7.4",
     "@mdx-js/react": "^1.5.2",
     "babel-loader": "^8.0.6",
