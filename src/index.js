@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {
   Appear,
   Box,
@@ -37,6 +36,7 @@ import markdown1goals from '../assets/markdown1goals.md';
 import markdown2quiz from '../assets/markdown2quiz.md';
 import markdown3graphqlOperations from '../assets/markdown3graphqlOperations.md';
 import markdown4sql from '../assets/markdown4sql.md';
+import { createRoot } from 'react-dom/client';
 
 // SPECTACLE_CLI_THEME_START
 const theme = {
@@ -429,4 +429,6 @@ const Presentation = () => {
     return deck;
 };
 
-ReactDOM.render(<Presentation />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<Presentation />);
