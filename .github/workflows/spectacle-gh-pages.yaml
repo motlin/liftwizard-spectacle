@@ -15,22 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          # (true OR recursive)
-          submodules: true
-          # Fetch all history
-          fetch-depth: 0
+      - uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v4
         with:
           cmd: install --ignore-engines
 
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v4
         with:
           cmd: build
 
