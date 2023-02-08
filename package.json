@@ -11,7 +11,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "spectacle": "^6.2.0"
+    "spectacle": "6.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -24,7 +24,7 @@
     "rimraf": "^3.0.0",
     "spectacle-mdx-loader": "^0.1.1",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^3.10.1"
   }
 }
